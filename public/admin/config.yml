@@ -1,0 +1,135 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+collections:
+  - name: homepage
+    label: Homepage Settings
+    files:
+      - name: homepage
+        label: Homepage
+        file: content/settings/homepage.json
+        fields:
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - { label: Headline, name: headline, widget: string }
+              - { label: Subheadline, name: subheadline, widget: text }
+              - { label: Primary CTA, name: primaryCta, widget: string }
+              - { label: Secondary CTA, name: secondaryCta, widget: string }
+          - label: Trust Stats
+            name: trustStats
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: string }
+              - { label: Label, name: label, widget: string }
+              - { label: Value, name: value, widget: string }
+              - { label: Suffix, name: suffix, widget: string, required: false }
+              - { label: Prefix, name: prefix, widget: string, required: false }
+              - { label: Description, name: description, widget: text }
+          - label: Why Choose
+            name: whyChoose
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - { label: Description, name: description, widget: text }
+          - label: Estimator
+            name: estimator
+            widget: object
+            fields:
+              - { label: Headline, name: headline, widget: string }
+              - { label: Body, name: body, widget: text }
+
+  - name: testimonials
+    label: Testimonials
+    folder: content/testimonials
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    fields:
+      - { label: Name, name: name, widget: string }
+      - { label: Location, name: location, widget: string }
+      - { label: Project Type, name: projectType, widget: string }
+      - { label: Rating, name: rating, widget: number, min: 1, max: 5, value_type: int }
+      - { label: Quote, name: quote, widget: text }
+      - { label: Featured, name: featured, widget: boolean, default: true }
+
+  - name: gallery
+    label: Gallery
+    folder: content/gallery
+    create: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Category, name: category, widget: string }
+      - { label: Location, name: location, widget: string }
+      - { label: Description, name: description, widget: text }
+      - { label: Before Image, name: beforeImage, widget: image }
+      - { label: After Image, name: afterImage, widget: image }
+      - { label: Featured, name: featured, widget: boolean, default: false }
+
+  - name: faqs
+    label: FAQs
+    files:
+      - name: general
+        label: General FAQs
+        file: content/faqs/general.json
+        fields:
+          - label: FAQs
+            name: faqs
+            widget: list
+            fields:
+              - { label: Question, name: question, widget: string }
+              - { label: Answer, name: answer, widget: text }
+
+  - name: blog
+    label: Blog
+    folder: content/blog
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Excerpt, name: excerpt, widget: text }
+      - { label: Body, name: body, widget: markdown }
+      - { label: Draft, name: draft, widget: boolean, default: true }
+
+  - name: case_studies
+    label: Future Case Studies
+    folder: content/case-studies
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Service, name: service, widget: string }
+      - { label: Location, name: location, widget: string }
+      - { label: Summary, name: summary, widget: text }
+      - { label: Body, name: body, widget: markdown }
+      - { label: Draft, name: draft, widget: boolean, default: true }
+
+  - name: services_notes
+    label: Services
+    description: Service page copy currently lives in lib/services.ts for type-safe rendering. Use this collection for editorial notes and future CMS migration.
+    folder: content/services
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string }
+      - { label: Summary, name: summary, widget: text }
+      - { label: Notes, name: body, widget: markdown }
