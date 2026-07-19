@@ -1,0 +1,73 @@
+{
+  "hero": {
+    "headline": "General Contracting Solutions Built to Last",
+    "subheadline": "From kitchens and bathrooms to additions, roofing, garages, decks and complete renovations, RL Solutions delivers dependable craftsmanship and practical solutions throughout Delaware and Southeastern Pennsylvania.",
+    "primaryCta": "Get My Project Estimate",
+    "secondaryCta": "Call Now"
+  },
+  "trustStats": [
+    {
+      "id": "satisfaction",
+      "label": "5-Star Customer Satisfaction",
+      "value": "5.0",
+      "suffix": "",
+      "description": "Homeowners trust us with the spaces they live in every day."
+    },
+    {
+      "id": "licensed",
+      "label": "Licensed & Insured",
+      "value": "100",
+      "suffix": "%",
+      "description": "Professional coverage and accountable project leadership."
+    },
+    {
+      "id": "estimates",
+      "label": "Free Project Estimates",
+      "value": "0",
+      "suffix": "",
+      "prefix": "$",
+      "description": "Clear guidance before you commit to construction."
+    },
+    {
+      "id": "craftsmanship",
+      "label": "Quality Craftsmanship",
+      "value": "1",
+      "suffix": "",
+      "description": "Details, materials, and finish work that stand up over time."
+    }
+  ],
+  "whyChoose": [
+    {
+      "title": "Professional workmanship",
+      "description": "Every project is built with care, precision, and pride in the finished result."
+    },
+    {
+      "title": "Honest communication",
+      "description": "You get clear scopes, realistic timelines, and straightforward answers."
+    },
+    {
+      "title": "High-quality materials",
+      "description": "We specify products and systems chosen for performance, not shortcuts."
+    },
+    {
+      "title": "Dependable scheduling",
+      "description": "We plan the work carefully and keep you informed as milestones approach."
+    },
+    {
+      "title": "Attention to detail",
+      "description": "Trim lines, transitions, and finish quality receive the same care as major construction."
+    },
+    {
+      "title": "Clean job sites",
+      "description": "A respectful job site protects your home and reflects how we do business."
+    },
+    {
+      "title": "Customer-first approach",
+      "description": "Your goals drive the plan. We solve problems with practical recommendations."
+    }
+  ],
+  "estimator": {
+    "headline": "Start Your Personalized Project Consultation",
+    "body": "Answer a few guided questions about your project goals, timeline, and property needs. We use your responses to prepare a customized estimate conversation—so you get clarity faster and can move forward with confidence."
+  }
+}

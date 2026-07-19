@@ -1,0 +1,9 @@
+{
+  "title": "Primary Bath Refresh",
+  "category": "Bathroom Remodeling",
+  "location": "Newark, DE",
+  "description": "Updated vanity, tile, lighting, and waterproofing for a clean, lasting bathroom.",
+  "beforeImage": "/images/gallery/bathroom-before.svg",
+  "afterImage": "/images/gallery/bathroom-after.svg",
+  "featured": true
+}

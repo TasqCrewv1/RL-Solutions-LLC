@@ -1,0 +1,9 @@
+{
+  "title": "Detached Garage Project",
+  "category": "Garages",
+  "location": "Middletown, DE",
+  "description": "Detached garage built for vehicle storage, workshop potential, and curb appeal.",
+  "beforeImage": "/images/gallery/garage-before.svg",
+  "afterImage": "/images/gallery/garage-after.svg",
+  "featured": false
+}

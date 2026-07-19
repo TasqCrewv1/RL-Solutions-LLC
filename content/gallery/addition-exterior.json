@@ -1,0 +1,9 @@
+{
+  "title": "Seamless Home Addition",
+  "category": "Home Additions",
+  "location": "West Chester, PA",
+  "description": "Addition designed to match existing architecture and expand living space.",
+  "beforeImage": "/images/gallery/addition-before.svg",
+  "afterImage": "/images/gallery/addition-after.svg",
+  "featured": true
+}

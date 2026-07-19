@@ -1,0 +1,9 @@
+{
+  "title": "Modern Kitchen Transformation",
+  "category": "Kitchen Remodeling",
+  "location": "Wilmington, DE",
+  "description": "Full kitchen remodel with improved layout, cabinetry, lighting, and durable finishes.",
+  "beforeImage": "/images/gallery/kitchen-before.svg",
+  "afterImage": "/images/gallery/kitchen-after.svg",
+  "featured": true
+}
